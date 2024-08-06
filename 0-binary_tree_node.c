@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
-#include "lists.h"
 #include "binary_trees.h"
 /**
  * binary_tree_node - ...
