@@ -13,13 +13,11 @@
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
+        binary_tree_t *grandparent = node->parent->parent;
+    
     if (node == NULL || node->parent == NULL || node->parent->parent == NULL)
         return (NULL);
 
-    /* Find the grandparent */
-    binary_tree_t *grandparent = node->parent->parent;
-
-    /* Return the uncle (the sibling of the parent) */
     if (grandparent->left == node->parent)
         return (grandparent->right);
     else
