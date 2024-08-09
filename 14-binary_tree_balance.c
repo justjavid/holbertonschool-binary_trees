@@ -23,9 +23,9 @@ int height(binary_tree_t *node)
 
 	if (left > right)
 	{
-		return left += 1;
+		return (left += 1);
 	}
-	return right += 1;
+	return (right += 1);
 }
 /**
  * binary_tree_balance - ...
